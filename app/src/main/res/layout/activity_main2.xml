@@ -7,7 +7,7 @@
     android:weightSum="360"
     android:orientation="vertical"
     android:background="@android:color/white"
-    tools:context=".MainActivity">
+    tools:context=".Main2Activity">
 
     <Space
         android:layout_width="match_parent"
@@ -15,19 +15,18 @@
         android:layout_weight="150"
         />
     <TextView
-        android:id="@+id/resultText"
+        android:id="@+id/resultText1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="30"
-        android:text="안녕하세요"
-        android:gravity="center"
+        android:text="asdf"
         android:textColor="@color/colorAccent"
-        android:layout_gravity="center_horizontal"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:visibility="visible"
-        />
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"/>
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="50"
@@ -38,7 +37,7 @@
         android:textSize="20dp"
         android:layout_gravity="center_vertical|center_horizontal"/>
     <Button
-        android:id="@+id/moveButton"
+        android:id="@+id/finishButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="30dp"
@@ -46,9 +45,11 @@
         android:layout_marginTop="100dp"
         android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
+        android:onClick="moveButton1"
         android:text="이동"
         android:textSize="15dp"
         android:elevation="20dp"
-        android:layout_weight="40"/>
+        android:layout_weight="40"
+        tools:ignore="OnClick" />
 
 </LinearLayout>
